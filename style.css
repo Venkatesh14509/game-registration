@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0033, #330066, #000033);
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.login-btn {
+    padding: 8px 20px;
+    border: 2px solid #00ffff;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background: #00ffff;
+    color: black;
+}
+
+/* Main Content */
+.container {
+    margin-top: 40px;
+}
+
+h1 span {
+    color: #00ffff;
+}
+
+.form-box {
+    margin: 40px auto;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    opacity: 0.8;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+    .form-box{
+        width: 90%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+}
